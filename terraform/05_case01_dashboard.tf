@@ -4,10 +4,10 @@
 
 # Dashboard
 resource "newrelic_one_dashboard" "case01" {
-  name = "Case 01"
+  name = "Case01"
 
   page {
-    name = "Case 01"
+    name = "Case01"
 
     # Page description
     widget_markdown {

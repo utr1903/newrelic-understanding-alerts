@@ -4,18 +4,18 @@
 
 # Alert policy
 resource "newrelic_alert_policy" "case01" {
-  name                = "Case 01"
+  name                = "Case01"
   incident_preference = "PER_CONDITION_AND_TARGET"
 }
 
 # Alert condition
 resource "newrelic_nrql_alert_condition" "case01" {
-  name       = "Case 01"
+  name       = "Case01"
   account_id = var.NEW_RELIC_ACCOUNT_ID
   policy_id  = newrelic_alert_policy.case01.id
 
   type        = "static"
-  description = "Alert whenever a case 01 log is sent."
+  description = "Alert whenever a case01 log is sent."
 
   enabled                      = true
   violation_time_limit_seconds = 259200
