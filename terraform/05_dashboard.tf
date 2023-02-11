@@ -91,10 +91,19 @@ resource "newrelic_one_dashboard" "cases" {
     }
 
     item {
+      title = "case02"
+      value = "Case02"
+    }
+
+    item {
       title = "case03"
       value = "Case03"
     }
 
+    item {
+      title = "case04"
+      value = "Case04"
+    }
     replacement_strategy = "default"
     type                 = "enum"
   }
