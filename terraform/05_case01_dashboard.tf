@@ -17,7 +17,7 @@ resource "newrelic_one_dashboard" "case01" {
       height = 3
       width  = 3
 
-      text = "## Description\n\ntype: static\n\nthreshold_duration:300s\n\nfill_option: none\n\naggregation_window: 60s\n\naggregation_method: event_flow\n\naggregation_delay: 0s\n\nexpiration_duration: none\n\n"
+      text = "## Description\n\ntype: static\n\nthreshold_duration: 300s\n\nfill_option: none\n\naggregation_window: 60s\n\naggregation_method: event_flow\n\naggregation_delay: 0s\n\nexpiration_duration: none\n\n"
     }
 
     # Logs
